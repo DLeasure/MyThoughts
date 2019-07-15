@@ -1,0 +1,16 @@
+#postForm {
+
+}
+
+#newThought {
+    background-color: white;
+    border: solid 1px black;
+    height: 30px;
+    width: 100%;
+}
+
+#addPostForm {
+    background-color: rgb(33, 166, 199);
+    border: solid 1px black;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+<div id="postForm">
+    <button id="newThought" (click)="ShowForm()" *ngIf="!showAddPostForm">New Thought</button>
+
+    <div id="addPostForm" *ngIf="showAddPostForm">
+        Title <br />
+        <input [(ngModel)]="newThoughtToAdd.Title"/> <br />
+        
+        Thought <br />
+        <input [(ngModel)]="newThoughtToAdd.ThoughtContent"/><br />
+        <!-- {{ newThoughtToAdd.ThoughtContent }} <br /> -->
+        
+        <button (click)="addNewThought()">
+            Add Post
+        </button>   
+        <button (click)="HideForm()">
+            Close
+        </button>
+    </div>
+</div>

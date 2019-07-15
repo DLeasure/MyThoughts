@@ -1,0 +1,13 @@
+h1 {
+    color: rgb(33, 166, 199);
+}
+
+li {
+    list-style-type: none;
+    /* left: 0px; */
+}
+
+ul {
+    background: white;
+    border: solid 1px black;
+}

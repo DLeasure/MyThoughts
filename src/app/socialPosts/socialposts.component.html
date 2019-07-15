@@ -1,0 +1,12 @@
+<h1>
+    {{ PageTitle }}
+</h1>
+<main>
+    <postform (newThought)="addThoughtToList($event)" ></postform>
+                <!-- This above is the new object coming in and calling the method -->
+    <ul>
+        <li *ngFor="let thought of MyThoughts; let i = index" [attr.data-index]="i">
+            <post [post]="thought" (itemToDelete)="deleteItem(i)"></post>
+        </li>
+    </ul>
+</main>
